@@ -298,8 +298,8 @@ const App = () => {
           }
             <h2 className="text-lg text-gray-600 mb-4">{el.description}</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 w-full mb-4">
-              {el.images.slice(0, 4).map((img) => (
-                <div key={img.id} className="overflow-hidden rounded-lg z-0">
+              {el.images.map((img) => (
+                <div key={img.id} className="overflow-hidden flex-wrap rounded-lg z-0">
                   <img
                     src={"https://to-dos-api.softclub.tj/images/" + img.imageName}
                     alt=""
